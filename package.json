@@ -1,0 +1,35 @@
+{
+  "name": "vue-footprints",
+  "version": "1.0.0",
+  "description": "Breadcrumbs for Vue.js with Vue Router",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/OSSPhilippines/vue-footprints.git"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vue-router",
+    "breadcrumbs"
+  ],
+  "author": "Joff Tiquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OSSPhilippines/vue-footprints/issues"
+  },
+  "homepage": "https://github.com/OSSPhilippines/vue-footprints#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-proposal-optional-chaining": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.10.1"
+  }
+}
