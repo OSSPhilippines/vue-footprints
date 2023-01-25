@@ -1,4 +1,4 @@
-# Vue Footprints
+# Vue Footprints 👣
 
 Breadcrumbs plugin for Vue.js & Vue Router. Why footprints? Coz it's similar to the idea of breadcrumbs. Also, there's already a bunch of packages that has "breadcrumbs" on their name.
 
