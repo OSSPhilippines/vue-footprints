@@ -11,27 +11,53 @@ Breadcrumbs plugin for Vue.js & Vue Router. Why footprints? Coz it's similar to 
 **Yarn**
 
 ```bash
-yarn add vue-footprints
+yarn add @ossph/vue-footprints
 ```
 
 **NPM**
 
 ```bash
-npm install vue-footprints
+npm install @ossph/vue-footprints
 ```
 
 ## Usage
+
+### Mixin
 
 This will add a global computed mixin array called `$footprints`. Remember this one, we'll talk about it in the implmentation part.
 
 ```js
 import { createApp } from 'vue'
-import VueFootprints from 'vue-footprints';
+import { VueFootprintsMixin } from '@ossph/vue-footprints';
 
 const app = createApp({});
 
-app.use(VueFootprints);
+app.use(VueFootprintsMixin, { returnRoute: true });
 ```
+
+### Composable
+
+You can also create a local implementation using the composable version.
+
+```js
+import { useRoute } from 'vue-router';
+
+export default {
+  setup () {
+    const route = useRoute();
+    const { footprints } = useFootprints(route, { returnRoute: true });
+    // footprints.value yields an array of route footprints
+  },
+};
+```
+
+### Options
+
+Both the mixin installation and the composable have the same options parameters.
+
+| Option | Type | Default | Description |
+| --- | --- | --- | --- |
+| `returnRoute` | `Boolean` | `false` | If `true`, the `route` object will be returned in the `footprints` array. |
 
 ## Implementation with Vue App
 

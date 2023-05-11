@@ -1,10 +1,11 @@
 {
-  "name": "vue-footprints",
+  "name": "@ossph/vue-footprints",
   "version": "1.0.0",
   "description": "Breadcrumbs for Vue.js with Vue Router",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --fix --ext .js,.vue ./",
     "build": "rollup --config"
   },
   "repository": {
@@ -30,6 +31,18 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-terser": "^0.4.0",
+    "eslint": "^8.10.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "eslint-webpack-plugin": "^3.1.1",
     "rollup": "^3.10.1"
-  }
+  },
+  "peerDependencies": {
+    "vue": "^3.3.1",
+    "vue-router": "^4.1.6"
+  },
+  "dependencies": {}
 }
