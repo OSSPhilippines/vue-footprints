@@ -1,6 +1,6 @@
 {
   "name": "@ossph/vue-footprints",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Breadcrumbs for Vue.js with Vue Router",
   "main": "dist/index.js",
   "scripts": {
